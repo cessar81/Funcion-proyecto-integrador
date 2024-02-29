@@ -1,0 +1,17 @@
+La funcion 'aplicar_descuento' tiene como propósito calcular y aplicar un descuento a una compra específica utilizando su ID:
+
+-CREATE FUNCTION: Esta línea crea una nueva función llamada aplicar_descuento. Toma dos parámetros: el ID de la compra (id_comp) y el porcentaje de descuento (descuento), y devuelve un valor decimal que representa el nuevo total después de aplicar el descuento.
+
+-BEGIN y END: Estos bloques marcan el inicio y el final del cuerpo de la función. Todo el código de la función está contenido entre estos dos terminos.
+
+-DECLARE: Aquí se declaran variables locales que serán utilizadas dentro de la función. "total" representa el total de la compra y "descuento_aplicado" es el monto del descuento a aplicar.
+
+-SELECT INTO: Esta consulta SQL calcula el total de la compra sumando el precio de cada producto multiplicado por su cantidad en el detalle de compra. El resultado se guarda en la variable total.
+
+-SET: Calcula el monto del descuento aplicando el porcentaje de descuento sobre el total de la compra y lo guarda en la variable descuento_aplicado.
+
+-SET: Resta el monto del descuento aplicado al total de la compra para obtener el nuevo total con descuento.
+
+-RETURN: Devuelve el nuevo total con descuento.
+
+Esto en base al desarrollo de el proyecto "Guru" :)
